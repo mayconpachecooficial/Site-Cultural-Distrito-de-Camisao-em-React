@@ -1,0 +1,92 @@
+.App {
+    text-align: center;
+
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    /* Distribui o espaço igualmente */
+    background: #f2e9e4;
+    padding: 1rem;
+    /* Espaçamento interno da barra de navegação */
+    width: 100%;
+    /* A navegação ocupa a largura total */
+    background-color: #22223b;
+
+}
+
+.nav-container {
+    background-color: green;
+    display: -moz-grid-line;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+
+
+}
+
+.nav-link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    box-shadow: none;
+    transition: background-color 0.3s;
+    text-align: center;
+    font-size: 30px;
+    display: block;
+    display: inline-block;
+    /* ou 'inline' */
+    margin-right: 10px;
+
+
+}
+
+.nav-link:hover {
+    background-color: white;
+    /* Cor de fundo ao passar o mouse */
+
+    color: orange;
+    /* Cor de texto ao passar o mouse */
+
+
+}

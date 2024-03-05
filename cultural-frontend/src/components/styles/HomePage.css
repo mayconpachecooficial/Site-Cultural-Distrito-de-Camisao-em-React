@@ -1,0 +1,64 @@
+/* src/pages/HomePage.css */
+.custom-feature {
+  background-color: white;
+  border-top: 4px solid greenyellow;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-feature:hover, .custom-feature.active-feature {
+  transform: scale(1.05);
+  background-color: #f8f9fa; /* Cor de fundo ao passar o mouse e quando ativo */
+}
+
+.active-feature {
+  font-weight: bold;
+  color: greenyellow; /* Cor do texto quando ativo */
+  border: 2px solid greenyellow; /* Borda quando ativo */
+}
+
+.custom-feature h2 {
+  color: green;
+}
+
+
+
+.bg-light{
+color: white;
+}
+
+.display-4 {
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: green;
+  border-radius: 100px;
+}
+
+.lead {
+  background-color: greenyellow;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration-color: aqua;
+  margin: auto;
+}
+
+.header {
+  margin-bottom: 2rem;
+  background-color: black;
+  color: black; /* Garante que o texto no cabeçalho seja legível */
+}
+
+
+/* Ajuste responsivo para imagens específicas */
+.custom-img, .d-block {
+  max-width: 50%; /* Mantém a imagem responsiva */
+  margin-left: auto; /* Centraliza a imagem horizontalmente */
+  margin-right: auto; /* Centraliza a imagem horizontalmente */
+  object-fit: contain; /* Garante que a imagem cubra a área sem perder as proporções */
+}
+
+@media (max-width: 768px) {
+  .header img {
+    width: 100%;
+    height: auto;
+  }
+}
