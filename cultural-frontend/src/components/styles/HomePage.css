@@ -1,59 +1,57 @@
-/* src/pages/HomePage.css */
+
 .custom-feature {
   background-color: white;
-  border-top: 4px solid greenyellow;
+  border-top: 8px solid, groove;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  text-overflow: ellipsis;
 }
 
 .custom-feature:hover, .custom-feature.active-feature {
   transform: scale(1.05);
-  background-color: #f8f9fa; /* Cor de fundo ao passar o mouse e quando ativo */
+  background-color: #f8f9fa;
+  /* Cor de fundo ao passar o mouse e quando ativo */
 }
 
 .active-feature {
   font-weight: bold;
-  color: greenyellow; /* Cor do texto quando ativo */
-  border: 2px solid greenyellow; /* Borda quando ativo */
+  color: green ;
+  /* Cor do texto quando ativo */
+  border: 5px solid green;
+  /* Borda quando ativo */
 }
 
 .custom-feature h2 {
-  color: green;
+  color: #386641;
 }
 
 
+.display-4, .bg-light, header {
 
-.bg-light{
-color: white;
-}
-
-.display-4 {
-  font-style: italic;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: green;
-  border-radius: 100px;
+  background-color: #386641;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  text-align: center;
 }
 
 .lead {
-  background-color: greenyellow;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-decoration-color: aqua;
-  margin: auto;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  color: white;
+  text-align: center;
 }
-
-.header {
-  margin-bottom: 2rem;
-  background-color: black;
-  color: black; /* Garante que o texto no cabeçalho seja legível */
-}
-
 
 /* Ajuste responsivo para imagens específicas */
 .custom-img, .d-block {
-  max-width: 50%; /* Mantém a imagem responsiva */
-  margin-left: auto; /* Centraliza a imagem horizontalmente */
-  margin-right: auto; /* Centraliza a imagem horizontalmente */
-  object-fit: contain; /* Garante que a imagem cubra a área sem perder as proporções */
+  max-width: 50%;
+  /* Mantém a imagem responsiva */
+  margin-left: auto;
+  /* Centraliza a imagem horizontalmente */
+  margin-right: auto;
+  /* Centraliza a imagem horizontalmente */
+  object-fit: contain;
+  /* Garante que a imagem cubra a área sem perder as proporções */
 }
 
 @media (max-width: 768px) {

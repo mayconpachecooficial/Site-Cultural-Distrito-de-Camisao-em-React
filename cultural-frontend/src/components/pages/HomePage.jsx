@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import { Carousel } from "react-bootstrap"; // Importe o Carousel do react-bootstrap
 import "../styles/HomePage.css";
-import culturalImage from "../photos/camisao1.webp";
+import culturalImage from "../photos/camisao1.jpg";
 import secondImage from "../photos/camisao2.jpg";
-import thirdImage from '../photos/camisao3.jpeg';
+import thirdImage from '../photos/camisao3.jpg';
 
 function HomePage() {
   const [activeSection, setActiveSection] = useState("");
@@ -27,7 +27,7 @@ function HomePage() {
         <Carousel.Item>
           <img
             src={culturalImage}
-            className="img-fluid rounded custom-img"
+            className="d-block w-100"
             alt="Cultura de Camisão"
           />
         </Carousel.Item>
@@ -62,14 +62,14 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-4" link="/history">
             <div
               onClick={() => handleSectionClick("events")}
               className={`custom-feature p-3 rounded shadow-sm h-100 ${
                 activeSection === "events" ? "active-feature" : ""
               }`}
             >
-              <h2 className="h5">Eventos</h2>
+              <h2 className="h5">Mural de Recados</h2>
               <p>
                 Participe dos nossos eventos culturais anuais e celebrações.
               </p>

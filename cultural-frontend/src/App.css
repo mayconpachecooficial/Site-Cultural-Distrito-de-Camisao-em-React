@@ -51,22 +51,25 @@
     /* Espaçamento interno da barra de navegação */
     width: 100%;
     /* A navegação ocupa a largura total */
-    background-color: #22223b;
+    background-color: white;
 
 }
 
-.nav-container {
-    background-color: green;
+.nav-container{
+
     display: -moz-grid-line;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 20px;
-
+    gap: 100px;
+    text-align: center;
 
 }
 
 .nav-link {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
+    background-size: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;;
+    text-decoration: white;
     color: white;
     padding: 0.5rem;
     box-shadow: none;
@@ -76,7 +79,8 @@
     display: block;
     display: inline-block;
     /* ou 'inline' */
-    margin-right: 10px;
+
+
 
 
 }
@@ -84,9 +88,8 @@
 .nav-link:hover {
     background-color: white;
     /* Cor de fundo ao passar o mouse */
-
-    color: orange;
+    color: green;
     /* Cor de texto ao passar o mouse */
-
+    border-radius: 30px;
 
 }

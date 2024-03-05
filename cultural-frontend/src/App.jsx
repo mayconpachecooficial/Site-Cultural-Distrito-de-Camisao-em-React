@@ -5,7 +5,8 @@ import HistoryPage from "./components/pages/HistoryPage";
 import BirthdaysPage from "./components/pages/BirthdaysPage";
 import TouristPointsPage from "./components/pages/TouristPointsPage";
 import PhotosPage from "./components/pages/PhotosPage";
-import SponsorsPage from "./components/pages/SponsorsPage";
+import AccommodationPage from "./components/pages/AccommodationPage";
+import GastronomyPage from "./components/pages/GastronomyPage";
 import RegisterPage from "./components/pages/RegisterPage";
 
 function App() {
@@ -14,26 +15,29 @@ function App() {
       <div className="nav-container">
       <nav>
         <Link to="/" className="nav-link">
-          Home
+          Home |
         </Link>
         <Link to="/history" className="nav-link">
-          História de Camisão
+
         </Link>
         <Link to="/birthdays" className="nav-link">
-          Aniversariantes
+          Aniversariantes |
         </Link>
         <Link to="/tourist-points" className="nav-link">
-          Pontos turísticos
+         
         </Link>
         <Link to="/photos" className="nav-link">
-          Fotos
+          Fotos |
         </Link>
-        <Link to="/sponsors" className="nav-link">
-          Patrocinadores
+        <Link to="/accommodation" className="nav-link">
+          Hospedagem |
+        </Link>
+        <Link to="/gastronomy" className="nav-link">
+          Gastronomia |
         </Link>
         <Link to="/register" className="nav-link">
-          Cadastro
-        </Link>
+          Cadastro 
+        </Link> 
       </nav>
       </div>
       <Routes>
@@ -42,7 +46,8 @@ function App() {
         <Route path="/birthdays" element={<BirthdaysPage />} />
         <Route path="/tourist-points" element={<TouristPointsPage />} />
         <Route path="/photos" element={<PhotosPage />} />
-        <Route path="/sponsors" element={<SponsorsPage />} />
+        <Route path="/accommodation" element={<AccommodationPage />} />
+        <Route path="/gastronomy" element={<GastronomyPage />} />
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
     </Router>
