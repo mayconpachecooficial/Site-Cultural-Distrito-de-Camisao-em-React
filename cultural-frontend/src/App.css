@@ -55,6 +55,11 @@
 
 }
 
+.search {
+    background-color: #282c34;
+    input-security: 1px;
+}
+
 .nav-container{
 
     display: -moz-grid-line;
